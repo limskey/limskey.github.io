@@ -1,0 +1,711 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Military TAPS</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/css/plugins/choices.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/css/plugins/datatable.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/css/plugins/daterangepicker.css" />
+    <link rel="stylesheet" href="https://github.com/Loopple/loopple-public-assets/blob/main/riva-dashboard-tailwind/css/plugins/flatpickr.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/css/plugins/paginate.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/css/plugins/jsvectormap.min.css" />
+    <link rel="stylesheet" href="../assets/css/tailwind/tailwind.min.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/loopple/loopple.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=system-ui|system-ui">
+</head>
+
+<body class="font-body bg-white">
+    <aside class="group/sidebar flex flex-col shrink-0 lg:w-[300px] w-[250px] transition-all duration-300 ease-in-out -translate-x-full lg:translate-x-0 m-0 fixed z-40 inset-y-0 left-0 lg:bg-light/30 bg-light border-r border-r-dashed border-r-neutral-200 sidenav fixed-start loopple-fixed-start" id="sidenav-main" data-sidebar="true" data-sidebar-value="469">
+
+        <div class="hidden border-b border-dashed lg:block dark:border-neutral-700/70 border-neutral-200"></div>
+        <div class="hidden border-b border-dashed lg:block dark:border-neutral-700/70 border-neutral-200"></div>
+        <div class="relative pl-3 my-5 overflow-y-scroll">
+            <div class="flex flex-col w-full font-medium">
+
+                <!-- menu item -->
+                <div>
+                    <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                        <a href="https://militarytaps.org/" class="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark">Home</a>
+                    </span>
+                </div>
+                <!-- menu item -->
+                <div>
+                    <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                        <a href="./cost.html" class="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark">Cost of Living Comparison</a>
+                    </span>
+                    <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                        <a href="./code.html" class="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark">Computer Coding Resources</a>
+                    </span>
+                    <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                        <a href="./cyber.html" class="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark">Cyber and IT Training</a></span>
+
+                    <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                        <a href="./jobs.html" class="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark">Jobs / Careers</a></span>
+
+                    <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                        <a href="./education.html" class="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark">Educational Resources</a></span>
+
+                    <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                        <a href="./mentor.html" class="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark">Mentorship Programs</a></span>
+
+                    <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                        <a href="./resume.html" class="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark">Resume Assistance</a></span>
+
+                    <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                        <a href="./spouse.html" class="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark">Spouse &amp; Family Resources</a></span>
+
+                    <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                        <a href="./support.html" class="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark">Support Groups and Volunteering</a></span>
+
+                    <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                        <a href="./certs.html" class="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark">Training and Certifications</a></span>
+
+                    <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                        <a href="./tools.html" class="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark">Translator Tools and Toolkits</a></span>
+
+                    <span class="select-none flex items-center px-4 py-[.775rem] cursor-pointer my-[.4rem] rounded-[.95rem]">
+                        <a href="./business.html" class="flex items-center flex-grow text-[1.15rem] dark:text-neutral-400/75 text-stone-500 hover:text-dark">Veteran Entrepreneurship</a></span>
+
+
+
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="lg:ml-[300px] relative h-full max-h-screen rounded-xl transition-all duration-200 bg-white" id="panel">
+        <nav class="flex h-28 mb-5 lg:h-[96px] align-text-top align-text-left" id="navbarTop" navbar-scroll="true" data-navbar="true" data-navbar-value="470">
+            <div class="sm:flex items-stretch justify-between grow lg:mb-0 mb-5 py-5 px-10">
+                <div class="flex flex-col flex-wrap justify-center mb-5 mr-3 lg:mb-0">
+
+
+                </div>
+                <div class="flex items-center lg:shrink-0 lg:flex-nowrap">
+                    <div class="relative flex items-center lg:ml-4 sm:mr-0 mr-2">
+                        <span class="absolute ml-4 leading-none -translate-y-1/2 top-1/2 text-muted">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"></path>
+                            </svg>
+                        </span>
+                        <input class="block w-full min-w-[70px] py-3 pl-12 pr-4 text-base font-medium leading-normal bg-white border border-solid outline-none appearance-none placeholder:text-secondary-dark peer text-stone-500 border-stone-200 bg-clip-padding rounded-2xl" placeholder="Search..." type="text">
+                        <span onclick="(() => { this.previousElementSibling.value=''})()" class="absolute right-0 left-auto mr-4 leading-none -translate-y-1/2 peer-placeholder-shown:hidden top-1/2 hover:text-primary text-muted">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="relative lg:hidden flex items-center sm:ml-2 ml-auto">
+                        <a href="javascript:void(0)" class="flex items-center justify-center w-12 h-12 text-base font-medium leading-normal text-center align-middle transition-colors duration-150 ease-in-out bg-transparent border border-solid shadow-none cursor-pointer rounded-2xl text-stone-500 border-stone-200 hover:text-primary active:text-primary focus:text-primary" onclick="(function(){document.querySelector('.group\\/sidebar').classList.toggle('-translate-x-full');})();">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="relative flex items-center ml-2 lg:ml-4">
+
+                    </div>
+                    <div class="relative flex items-center ml-2 lg:ml-4">
+
+                    </div>
+                    <div class="relative flex items-center ml-2 lg:ml-4">
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="w-full px-10 py-6 mx-auto loopple-min-height-78vh text-slate-500">
+            <div class="relative flex-[1_auto] flex flex-col break-words min-w-0 bg-clip-border rounded-[.95rem] border border-dashed border-stone-200 bg-white mb-5">
+                <!-- card body  -->
+                <div class="flex-auto block py-8 px-9">
+                    <div class="mb-16">
+                        <div class="mb-11">
+                            <div class="mb-9">
+                                <h3 class="font-semibold text-[2.25rem]/[1.2] text-dark mb-2 font-display">Spouse & Family Resources</h3>
+                            </div>
+                        </div>
+                        <p class="font-medium text-[1.15rem]"><span style="font-family: Verdana, sans-serif; font-size: 15px; text-align: -webkit-center;" class="ext-[1.15rem] font-medium">Explore various resources to assist your spouse and family members.</span><br></p>
+                    </div>
+                    <div>
+                        <div class="mb-9">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap -mx-3 mb-5 removable">
+
+                <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                    <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                        <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                            <div class="flex items-center">
+                                <div class="ml-4 font-semibold text-xl text-dark">American Corporate Partners (Mentor)</div>
+                            </div>
+                        </div>
+                        <div class="flex-auto px-6 py-4">
+                            <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                Connect with mentors through the American Corporate Partners program.
+                            </p>
+                            <div class="relative flex">
+                                <a href="https://www.acp-usa.org/mentoring-program" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                    Visit Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                    <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                        <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                            <div class="flex items-center">
+                                <div class="ml-4 font-semibold text-xl text-dark">Association of Defense Communities</div>
+                            </div>
+                        </div>
+                        <div class="flex-auto px-6 py-4">
+                            <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                Access resources and support services for military families through the Association of Defense Communities.
+                            </p>
+                            <div class="relative flex">
+                                <a href="https://defensecommunities.org/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                    Visit Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                    <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                        <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                            <div class="flex items-center">
+                                <div class="ml-4 font-semibold text-xl text-dark">Association of the US Army</div>
+                            </div>
+                        </div>
+                        <div class="flex-auto px-6 py-4">
+                            <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                Find family resources and support through the Association of the US Army.
+                            </p>
+                            <div class="relative flex">
+                                <a href="https://www.ausa.org/family-resources" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                    Visit Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex flex-wrap -mx-3 mb-5 removable">
+
+                <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                    <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                        <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                            <div class="flex items-center">
+                                <div class="ml-4 font-semibold text-xl text-dark">Blue Star Families</div>
+                            </div>
+                        </div>
+                        <div class="flex-auto px-6 py-4">
+                            <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                Access support and programs for military families through Blue Star Families.
+                            </p>
+                            <div class="relative flex">
+                                <a href="https://bluestarfam.org/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                    Visit Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                    <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                        <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                            <div class="flex items-center">
+                                <div class="ml-4 font-semibold text-xl text-dark">Childcare Aware</div>
+                            </div>
+                        </div>
+                        <div class="flex-auto px-6 py-4">
+                            <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                A resource for military families seeking assistance with childcare.
+                            </p>
+                            <div class="relative flex">
+                                <a href="https://www.childcareaware.org/families/military-child-care-assistance-programs/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                    Visit Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                    <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                        <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                            <div class="flex items-center">
+                                <div class="ml-4 font-semibold text-xl text-dark">Clearinghouse for Military Family Readiness</div>
+                            </div>
+                        </div>
+                        <div class="flex-auto px-6 py-4">
+                            <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                Provides resources and support for military families.
+                            </p>
+                            <div class="relative flex">
+                                <a href="https://militaryfamilies.psu.edu/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                    Visit Website
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="flex flex-wrap -mx-3 mb-5 removable">
+
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">Education Eligibility</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Information about education benefits eligibility for veterans.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://www.va.gov/education/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">FINRA Foundation Military Spouse Fellowship Program</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Information about financial programs for military spouses.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://www.saveandinvest.org/military/military-spouse-fellowship-program" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">Hiring Our Heroes</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Resources and support for military spouses seeking employment.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://www.hiringourheroes.org/military-spouses/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="flex flex-wrap -mx-3 mb-5 removable">
+
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">Hug a Hero (Daddy Doll)</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    A program providing comfort items for military families.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://www.hugahero.com/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">Military Child Education Coalition</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Support and resources for education for military children.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://www.militarychild.org/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">Military Housing</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Information and resources for military housing.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://www.ahrn.com/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-5 removable">
+
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">Military Spouse</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Information and resources for military spouses.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://www.militaryspouse.com/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">Military Spouse Coders</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Support and resources for military spouses interested in coding careers.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://milspousecoders.org/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">Military Spouse Corporate Career Network</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    A network connecting military spouses with corporate career opportunities.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="http://www.msccn.org/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-5 removable">
+
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">Military Spouse Employment Partnership--MSEP</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    A program facilitating employment opportunities for military spouses.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://msepjobs.militaryonesource.mil/msep/home" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">Military Spouses (DOL)</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Resources and support for military spouses from the Department of Labor.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://www.veterans.gov/milspouses/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">MySECO</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Support and resources for military spouses' education and career opportunities.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://myseco.militaryonesource.mil/portal/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-5 removable">
+
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">MySTeP</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Information and resources for military spouses' career development.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://myseco.militaryonesource.mil/portal/mystep" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">National Military Family Association</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Support and advocacy for military families.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://www.militaryfamily.org/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">National Military Spouse Network</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Support and networking opportunities for military spouses.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://www.nationalmilitaryspousenetwork.org/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-5 removable">
+
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">Psychological Health Center of Excellence</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Resources for psychological health for military families.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://pdhealth.mil/readiness-early-intervention/deployment-health/deployment-resources/military-family-resources" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">Sesame Street for Military Families</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Support and resources for military families from Sesame Street.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://sesamestreetformilitaryfamilies.org/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">The Rosie Network</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Support and resources for military families and entrepreneurs.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://therosienetwork.org/" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="flex flex-wrap -mx-3 mb-5 removable">
+
+                    <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none xl:mb-0">
+                        <div class="relative flex flex-col break-words min-w-0 bg-clip-border rounded border border-dashed border-stone-200 bg-light/30 hover:border-primary">
+                            <div class="flex justify-between items-center p-6 pb-0 bg-transparent">
+                                <div class="flex items-center">
+                                    <div class="ml-4 font-semibold text-xl text-dark">Tutor Help</div>
+                                </div>
+                            </div>
+                            <div class="flex-auto px-6 py-4">
+                                <p class="mt-1 mb-7 text-secondary-dark font-medium text-base">
+                                    Online tutoring services for military families.
+                                </p>
+                                <div class="relative flex">
+                                    <a href="https://military.tutor.com/home" class="mr-2 inline-block text-[0.925rem] font-medium leading-normal text-center align-middle cursor-pointer rounded-[.95rem] transition-colors duration-150 ease-in-out text-white bg-dark shadow-none border-0 px-5 py-3 hover:bg-dark-dark active:bg-dark-dark focus:bg-dark-dark">
+                                        Visit Website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+        <!-- Footer -->
+        <footer class="flex items-stretch">
+            <div class="px-10 flex w-full flex-col md:flex-row py-3 items-center justify-center md:justify-between">
+                <div class="order-2 text-dark md:order-1">
+                    <span class="mr-1 font-medium text-muted">
+                        2024
+                    </span>
+                    <a href="https://brassmonkeysolutions.com/" target="_blank" class="transition-colors duration-200 ease-in-out text-secondary-inverse hover:text-primary">Brass Monkey Solutions</a>
+                </div>
+                <ul class="flex order-1 p-0 m-0 font-medium">
+                    <li class="block py-[.15rem]">
+                        <a href="https://militarytaps.org/" target="_blank" class="flex items-center px-2 cursor-pointer text-light-inverse flex-[0_0_100%] py-[.65rem] outline-none">Home</a>
+                    </li>
+                    <li class="block py-[.15rem]">
+                        <a href="mailto:hello@brassmonkeysolutions.com" class="flex items-center px-2 cursor-pointer text-light-inverse flex-[0_0_100%] py-[.65rem] outline-none">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/plugins/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/plugins/chartjs-plugin-datalabels.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/plugins/countup.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/plugins/choices.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/choices.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/plugins/datatables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/datatable.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/plugins/paginate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/paginate.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/plugins/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/plugins/daterangepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/daterangepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/plugins/world.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/riva-dashboard-tailwind/scripts/riva-dashboard.js" async></script>
+    <script src="../assets/js/loopple/loopple.js"></script>
+</body>
